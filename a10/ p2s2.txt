@@ -1,0 +1,1 @@
+There are still tree objects that store the pointers pointing to the elements being deleted.
