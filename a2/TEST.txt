@@ -1,0 +1,56 @@
+load immediate: load the value 0x11223344 into register0,
+     load the value 0x11223344 into register7,
+     after excuting, the values in r0 and r7 are 0x11223344. 
+
+load base + offset: load the value 0x04 into register0,
+                    0x4+ 4(offset) = 0x8
+                    load the value at address 0x8 into register1,
+                    after excuting, the value in r1 is 0x11223344, which is the value stored in 0x8
+
+load indexed: load the value 0x01 into register3,
+      r0 + r3*4 = 0x8
+     load the value at address 0x8 into register2,
+     after excuting, the value in r2 is 0x11223344, which is the value stored in 0x8
+
+stor base + offset: load the value 0x22222222 into register4,
+                    r4 + r3*4 =0x8
+                    after excuting, the value stored at address 0x8 is 0x22222222, which is the value in r7.
+
+store indexed: load the value 0x12345678 into register4,
+               after excuting,  the value stored at address 0x8 is 0x12345678, which is the value in r7.
+
+rr move: copy the value in register0 into register1,
+         after excuting, the value in r1 is 0x00000004, which is the value in r0.
+
+add: add the values in r3 and r1,(0x01+ 0x04 = 0x05)
+     then load the value into r.
+     after excuting,the value in r1 is 0x00000005.
+
+and: the value in r3 is 0x00000001, the value in r7 is 0x11223344,
+     after excuting, the value in r7 is 0x00000000, which is the same value we expected.
+
+inc: increase the value in r3 by 1.
+     after excuting, the value in r3 is 0x00000002,which is the same value we expected.
+
+inc addr: increase the address by 1,
+          after excuting, the value in r3 is 0x00000006,which is the same value we expected.
+
+dec: decrease the value in r3 by 1.
+     after excuting, the value in r3 is 0x00000005,which is the same value we expected.
+
+dec addr: decrease the address by 1,
+          after excuting, the value in r3 is 0x00000001, which is the same value we expected.
+
+not: load the value 0xffffffff into register4,
+     after excuting, the value in r4 is 0x00000000, which is the same value we expected.
+
+shift: shift the value in r3 left by1,
+       after excuting(shl $1,r3), the value in r3 is 0x00000002, which is the same value we expected.,
+       shift the value in r3 right by 1,
+       after excuting(shr $1,r3), the value in r3 is 0x00000001, which is the same value we expected.
+       then shift the value in r3 right by 1 again,
+       after excuting(shr $1,r3), the value in r3 is 0x00000000, which is the same value we expected.
+
+ 
+
+    
