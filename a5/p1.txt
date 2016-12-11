@@ -1,0 +1,14 @@
+hoho->d2->a=hoho->d1->b;
+hoho->d1->a=hoho->d2->b;
+
+Only these two lines correspond with the code in p1.s, there would be 5 reads and two writes.
+
+
+
+read hoho
+read hoho->d1
+read hoho->d1->a
+read hoho->d2
+read hoho->d2->b
+write hoho->d2->a
+write hoho->d1->a

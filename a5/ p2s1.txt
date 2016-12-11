@@ -1,0 +1,1 @@
+After free(e) is excuted, e->name is still called then. The content pointed by the e can be anything. 
