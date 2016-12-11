@@ -1,0 +1,1 @@
+We just need to read the value at the address (address of x + 4*i). As stated, we dont need to include memory read for the value of i. So the total memory read is one.

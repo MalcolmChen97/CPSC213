@@ -1,0 +1,3 @@
+We need two memory reads.
+One for the value of pointer z, the other for the value at (the value of pointer z + i*4).
+Also, memory read for the value i was not included here.
