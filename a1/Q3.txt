@@ -1,0 +1,2 @@
+0x11111111 is an example of a 4-byte integer whose big- and little-endian representations are identical.
+In general, a number whose big- and little-endian representations are identical must be equal to the number which reads backward in term of byte. So for a x-byte number, (1+i)th byte should be same as (x-i)th byte where i is a non-negative integer that is less than x.

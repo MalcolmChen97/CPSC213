@@ -1,0 +1,19 @@
+#1 test
+java Endianness 0 0 0 1
+To test whether big endian value is 1(correct).
+
+#2 test
+java Endianness 1 0 0 0
+To test whether little endian value is 1(correct).
+
+#3 test
+java Endianness ff ff ff ff
+To test whether program can read signed bytes.
+Both big-endian value and little-endian print -1, which is correct.
+
+#4 test
+java Endianness 1f 21 21 1f
+To test the bytes whose big-endian value and little-endian are identical.
+
+#5 test and #6 test
+Since there are only 32 bits, so the max value is 2^31-1, and the min value is -2^31. Just test these two number and check their big-endian value or little-endian value. 

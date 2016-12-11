@@ -1,0 +1,3 @@
+After searching on Google, we get that all Intel processors use little endianness. Since the way of getting coordinates is wrong, we can infer that DF-224 use big endianness. 
+The RA in hex is 0x0007F665, and the D in hex is 0xFFDE5181.
+After converting them, the actual RA is 1710622464, which is 0x65F60700 in hex; and the actual D is -2125340929, which is 0x8151DEFF in hex.
