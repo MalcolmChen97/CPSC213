@@ -1,0 +1,13 @@
+3a.7-8 and 20-21
+
+3b.15-16 and 30-31
+
+3c.Replace 20 with:
+ ld   $0xffffffec, r0
+
+3d.Replace 7 with:
+ ld   $0xfffffff4, r0
+
+ Insert after 12:
+ ld   $0x2, r0   
+ st   r0, 0x8(r5)

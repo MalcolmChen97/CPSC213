@@ -1,0 +1,5 @@
+2a.S7-static-call-stack uses a stack store the return address and arguments.
+
+2b.used for nested functions(called within another function)
+
+2c.Easy to write when there is no nested function
