@@ -1,0 +1,5 @@
+10 0.015s
+100 0.015s
+1000 0.018s
+
+Compared with the time of sRead, which is a sequential read, aRead is much faster because it allows CPU to do its jobs while the disk is being read instead of waiting for finishing reading the disk and then handle the data.

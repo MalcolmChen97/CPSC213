@@ -1,0 +1,8 @@
+In order to test the program, we did the following things:
+1)make sure it compiles
+2)change the number of iterations,consumers and producers to make sure that the total number of counts euqal to the (NUM_ITERATIONS * (NUM_CONSUMERS + NUM_PRODUCERS))
+3)make sure all asertion are true(no exception)
+
+We noticed that when threads of producers are created before consumers’,producers wait more than consumers. By reversing the order, consumers wait more than producers. This may mean that the thread created earlier is better in competing the CPU.
+
+The items histogram shows whether the buff size is enough. If I change max_item to 50, most of the items in this new histogram would have 0 count because threads run so fast that they do not need the extra space.

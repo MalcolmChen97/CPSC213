@@ -1,0 +1,7 @@
+10 0.114s
+100 1.088s
+1000 11.06s
+
+The speed is 10ms/read.
+Since this is a sequential read, the time just is about the product of the speed and the number of reads.
+

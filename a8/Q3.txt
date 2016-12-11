@@ -1,0 +1,9 @@
+10 0.016s
+100 0.021s
+1000 0.067s
+10000 0.543s
+
+These data show that its faster than sRead, but slower than aRead when the number of read becomes large.
+It is because:
+1)It use multiple threads, which means that CPU also does wait for the read to complete to do other things. CPU goes back and forth between threads in this way.
+2)Before CPU operate on other threads, it saves all data on the registers on the stack. When number of threads, which increases with the number of read here, grows larger, it takes more time than aRead.
